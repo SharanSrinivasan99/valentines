@@ -1,0 +1,103 @@
+body {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  background:
+    linear-gradient(rgba(255, 221, 225, 0.85), rgba(238, 156, 167, 0.9)),
+    url("images/poster.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 40px 20px;
+}
+
+.hero {
+  width: 220px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  color: #b30059;
+}
+
+p {
+  font-size: 18px;
+  color: #5a0033;
+}
+
+.buttons {
+  margin: 25px 0;
+}
+
+.buttons button {
+  background-color: #ff4d88;
+  border: none;
+  padding: 16px 28px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', sans-serif;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.buttons button:hover {
+  box-shadow: 0 0 15px rgba(255, 77, 136, 0.6);
+  transform: scale(1.05);
+}
+
+.gallery img {
+  width: 220px;
+  margin-top: 25px;
+  border-radius: 20px;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  width: 320px;
+  margin: 15% auto;
+}
+
+.popup-content img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 24px;
+  animation: floatUp 6s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh);
+    opacity: 0;
+  }
+}
